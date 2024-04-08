@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_app"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.dot.prime.presentation.splash.view.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_phoneFragment"
+            app:destination="@id/phoneFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_nameFragment"
+            app:destination="@id/nameFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_splashFragment_to_mandatoryUpdateFragment"
+            app:destination="@id/mandatoryUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.dot.prime.presentation.onboarding.view.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_first_screen" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_preferred_groups_navigation"
+            app:destination="@id/preferred_groups_navigation"
+            app:popUpTo="@id/navigation_app"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.testprime.presentation.main.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_cardFragment"
+            app:destination="@id/cardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="com.dot.prime.presentation.registration.phone.view.PhoneFragment"
+        android:label="fragment_phone"
+        tools:layout="@layout/fragment_phone" >
+        <action
+            android:id="@+id/action_phoneFragment_to_codeFragment"
+            app:destination="@id/codeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeFragment"
+        android:name="com.dot.prime.presentation.registration.code.view.CodeFragment"
+        android:label="fragment_code"
+        tools:layout="@layout/fragment_code" >
+        <action
+            android:id="@+id/action_codeFragment_to_nameFragment"
+            app:destination="@id/nameFragment"
+            app:popUpTo="@id/navigation_app"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_codeFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/navigation_app"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="token"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.dot.prime.presentation.registration.name.view.NameFragment"
+        android:label="fragment_name"
+        tools:layout="@layout/fragment_name" >
+        <action
+            android:id="@+id/action_nameFragment_to_dateBirthFragment"
+            app:destination="@id/dateBirthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dateBirthFragment"
+        android:name="com.dot.prime.presentation.registration.date_birth.DateBirthFragment"
+        android:label="fragment_date_birth"
+        tools:layout="@layout/fragment_date_birth" >
+        <action
+            android:id="@+id/action_dateBirthFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="idGender"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.dot.prime.presentation.registration.email.view.EmailFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/fragment_email" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="dateBirth"
+            app:argType="string" />
+        <argument
+            android:name="idGender"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_emailFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
+            app:popUpTo="@id/navigation_app"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/cardFragment"
+        android:name="com.dot.prime.presentation.card.view.CardFragment"
+        android:label="CardFragment"
+        tools:layout="@layout/dialog_fragment_card" />
+    <dialog
+        android:id="@+id/mandatoryUpdateFragment"
+        android:name="com.dot.prime.presentation.splash.dialogs.MandatoryUpdateFragment"
+        android:label="MandatoryUpdateFragment"
+        tools:layout="@layout/dialog_fragment_mandatory_update">
+        <argument
+            android:name="link"
+            app:argType="string" />
+    </dialog>
+    <include app:graph="@navigation/preferred_groups_navigation" />
+    <action
+        android:id="@+id/action_global_mainFragment"
+        app:destination="@id/mainFragment"
+        app:popUpTo="@id/navigation_app"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/changePhoneFragment"
+        android:name="com.dot.prime.presentation.profile.viewpager.my_data.change_phone.phone.view.ChangePhoneFragment"
+        android:label="fragment_change_phone"
+        tools:layout="@layout/fragment_change_phone" >
+        <action
+            android:id="@+id/action_changePhoneFragment_to_changePhoneCodeFragment"
+            app:destination="@id/changePhoneCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePhoneCodeFragment"
+        android:name="com.dot.prime.presentation.profile.viewpager.my_data.change_phone.code.view.ChangePhoneCodeFragment"
+        android:label="fragment_change_phone_code"
+        tools:layout="@layout/fragment_change_phone_code" >
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_changePhoneCodeFragment_to_phoneChangedSuccessFragment"
+            app:destination="@id/phoneChangedSuccessFragment" />
+        <argument
+            android:name="token"
+            app:argType="string" />
+    </fragment>
+    <dialog
+        android:id="@+id/phoneChangedSuccessFragment"
+        android:name="com.dot.prime.presentation.profile.viewpager.my_data.change_phone.dialog.PhoneChangedSuccessFragment"
+        android:label="PhoneChangedSuccessFragment"
+        tools:layout="@layout/dialog_fragment_phone_changed_success"/>
+    <fragment
+        android:id="@+id/changeMailFragment"
+        android:name="com.dot.prime.presentation.profile.viewpager.my_data.change_mail.view.ChangeMailFragment"
+        android:label="ChangeMailFragment"
+        tools:layout="@layout/fragment_change_mail">
+        <action
+            android:id="@+id/action_changeMailFragment_to_mailChangedSuccessFragment"
+            app:destination="@id/mailChangedSuccessFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/mailChangedSuccessFragment"
+        android:name="com.dot.prime.presentation.profile.viewpager.my_data.change_mail.dialog.MailChangedSuccessFragment"
+        android:label="MailChangedSuccessFragment"
+        tools:layout="@layout/dialog_fragment_mail_changed_success">
+        <argument
+            android:name="email"
+            app:argType="string" />
+    </dialog>
+
+</navigation>

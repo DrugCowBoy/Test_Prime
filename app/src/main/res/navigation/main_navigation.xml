@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/loyaltyContainerFragment">
+
+    <fragment
+        android:id="@+id/menuContainerFragment"
+        android:name="com.example.testprime.presentation.main.container.MenuContainerFragment"
+        android:label="fragment_menu_container"
+        tools:layout="@layout/fragment_container_menu" />
+    <fragment
+        android:id="@+id/basketContainerFragment"
+        android:name="com.example.testprime.presentation.main.container.BasketContainerFragment"
+        android:label="fragment_basket_container"
+        tools:layout="@layout/fragment_container_basket" />
+    <fragment
+        android:id="@+id/profileContainerFragment"
+        android:name="com.example.testprime.presentation.main.container.ProfileContainerFragment"
+        android:label="fragment_profile_container"
+        tools:layout="@layout/fragment_container_profile" />
+    <fragment
+        android:id="@+id/loyaltyContainerFragment"
+        android:name="com.example.testprime.presentation.main.container.LoyaltyContainerFragment"
+        android:label="fragment_loyalty_container"
+        tools:layout="@layout/fragment_container_loyalty" />
+</navigation>

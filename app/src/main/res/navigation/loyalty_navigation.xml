@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loyalty_navigation"
+    app:startDestination="@id/loyaltyFragment">
+
+    <fragment
+        android:id="@+id/loyaltyFragment"
+        android:name="com.example.testprime.presentation.loyalty.loyalty.view.LoyaltyFragment"
+        android:label="fragment_loyalty"
+        tools:layout="@layout/fragment_loyalty" >
+        <action
+            android:id="@+id/action_loyaltyFragment_to_estimateProductFragment"
+            app:destination="@id/estimateProductFragment"/>
+        <action
+            android:id="@+id/action_loyaltyFragment_to_dateBirthSoonFragment"
+            app:destination="@id/dateBirthSoonFragment" />
+        <action
+            android:id="@+id/action_loyaltyFragment_to_dateBirthCanActivateFragment"
+            app:destination="@id/dateBirthCanActivateFragment" />
+        <action
+            android:id="@+id/action_loyaltyFragment_to_cardFragment2"
+            app:destination="@id/cardFragment2" />
+        <action
+            android:id="@+id/action_loyaltyFragment_to_preferred_groups_navigation"
+            app:destination="@id/preferred_groups_navigation" />
+        <action
+            android:id="@+id/action_loyaltyFragment_to_statusFragment"
+            app:destination="@id/statusFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/estimateProductFragment"
+        android:name="com.example.testprime.presentation.loyalty.estimate_product.view.EstimateProductFragment"
+        android:label="EstimateProductFragment"
+        tools:layout="@layout/dialog_fragment_estimate_product">
+        <argument
+            android:name="order_id"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/dateBirthSoonFragment"
+        android:name="com.example.testprime.presentation.loyalty.date_birth_soon.DateBirthSoonFragment"
+        android:label="DateBirthSoonFragment"
+        tools:layout="@layout/dialog_fragment_birth_date_soon">
+        <argument
+            android:name="type_birthday"
+            app:argType="integer" />
+        <argument
+            android:name="sub"
+            app:argType="string" />
+        <argument
+            android:name="info"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/dateBirthCanActivateFragment"
+        android:name="com.example.testprime.presentation.loyalty.date_birth_can_activate.view.DateBirthCanActivateFragment"
+        android:label="DateBirthCanActivateFragment"
+        tools:layout="@layout/dialog_fragment_birth_date_can_activate">
+        <argument
+            android:name="sub"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/cardFragment2"
+        android:name="com.dot.prime.presentation.card.view.CardFragment"
+        android:label="CardFragment"
+        tools:layout="@layout/dialog_fragment_card"/>
+    <include app:graph="@navigation/preferred_groups_navigation" />
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.dot.prime.presentation.status.view.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" >
+
+    </fragment>
+</navigation>

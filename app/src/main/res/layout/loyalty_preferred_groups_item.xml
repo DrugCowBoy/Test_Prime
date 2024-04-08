@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_background_loyalty">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_preferred_groups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/card_pref_groups_color"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_blur"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pref_groups_blur"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/text_title_preferred_groups"
+                style="@style/DishItem.Title"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="-65dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                app:layout_constraintEnd_toStartOf="@id/image_preferred_groups"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Баллы за блюда в апреле" />
+
+            <TextView
+                android:id="@+id/text_desc_preferred_groups"
+                style="@style/TextFavDishesDesc"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="-60dp"
+                app:layout_constraintEnd_toStartOf="@id/image_preferred_groups"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_title_preferred_groups"
+                tools:text="Каждый месяц выбирайте любимые блюда и получайте за них баллы" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_to_preferred_groups"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="9dp"
+                android:foreground="@drawable/ripple_item_background"
+                app:cardBackgroundColor="@color/color_transparent"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_desc_preferred_groups">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView_to_fav_preferred_groups"
+                        style="@style/OnBoardingTextDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="@string/fav_btn_select_new"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/image_preferred_groups"
+                android:layout_width="260dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="-35dp"
+                android:layout_marginBottom="-60dp"
+                android:src="@drawable/pref_groups_img"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

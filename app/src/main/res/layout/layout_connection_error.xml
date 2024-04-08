@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView_connection_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/icon_connection_error"/>
+
+    <TextView
+        android:id="@+id/textView_connection_error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_grey"
+        android:textSize="15sp"
+        style="@style/BoldText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView_connection_error"
+        android:layout_marginTop="57dp"
+        android:text="@string/connection_error_title"/>
+
+    <TextView
+        android:id="@+id/textView_connection_error_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_grey"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_connection_error_title"
+        android:layout_marginTop="15dp"
+        android:text="@string/connection_error_desc"
+        android:gravity="center"/>
+
+    <com.example.testprime.presentation.common.custom_view.CustomButton
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/update_app_btn"
+        app:button_enabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

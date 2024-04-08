@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basket_navigation"
+    app:startDestination="@id/basketFragment">
+
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.dot.prime.presentation.basket.view.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <action
+            android:id="@+id/action_basketFragment_to_productFragment2"
+            app:destination="@id/productFragment2" />
+        <action
+            android:id="@+id/action_basketFragment_to_clearBasketFragment"
+            app:destination="@id/clearBasketFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/productFragment2"
+        android:name="com.dot.prime.presentation.product.view.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/dialog_fragment_product" >
+        <argument android:name="id_product"
+            app:argType="string" />
+        <argument
+            android:name="quantity"
+            app:argType="integer" />
+    </dialog>
+    <dialog
+        android:id="@+id/clearBasketFragment"
+        android:name="com.dot.prime.presentation.basket.dialog.ClearBasketFragment"
+        android:label="ClearBasketFragment"
+        tools:layout="@layout/dialog_fragment_clear_basket"/>
+</navigation>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dialog -->
+    <style name="FullScreenDialogStyle">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="FullScreenDialogBarStyle">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!-- ProgressBar -->
+    <style name="ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminateTint">@color/green</item>
+    </style>
+    <style name="CustomProgressBarHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+<!--        <item name="android:progressDrawable">@drawable/custom_progress_bar_horizontal</item>-->
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <!-- Text -->
+    <style name="OnBoardingTextTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">0.72sp</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+    </style>
+
+    <style name="OnBoardingTextDesc">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">0.25sp</item>
+    </style>
+
+    <style name="TextDesc">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">3.3sp</item>
+    </style>
+
+    <style name="BoldText">
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+    </style>
+
+    <style name="TextDescBold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">3.3sp</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">0.72sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+    </style>
+
+    <style name="TextTitle.Empty">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">15.37sp</item>
+        <item name="android:lineSpacingExtra">0.76sp</item>
+    </style>
+
+    <style name="EditTextInput">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextDescError">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">0.3sp</item>
+    </style>
+
+    <style name="WhiteButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/white_button</item>
+    </style>
+
+    <style name="BottomNavigationText">
+        <item name="android:textColor">@color/default_grey</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="BottomNavigationTextSelected">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+    </style>
+
+    <style name="DishItem">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DishItem.Title">
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">0.5sp</item>
+    </style>
+
+    <style name="DishItem.Cost">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">0.35sp</item>
+    </style>
+
+    <style name="DishItem.Weight">
+        <item name="android:textSize">8sp</item>
+        <item name="android:lineSpacingExtra">1.8sp</item>
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="DishItem.Count">
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">0.3sp</item>
+    </style>
+
+    <style name="TextCountProduct">
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">5.5sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextСharacteristicProduct">
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">2.66sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0.58sp</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+    </style>
+
+    <style name="Coins">
+        <item name="android:textColor">@color/coins_grey</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">0.5sp</item>
+    </style>
+
+    <style name="LoyaltyDesc">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">0.3sp</item>
+    </style>
+
+    <style name="LoyaltyValue">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">0.72sp</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+    </style>
+
+    <style name="TextFooter">
+        <item name="android:textColor">@color/text_footer</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">0.3sp</item>
+    </style>
+
+    <style name="TextSwitch">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0.4sp</item>
+    </style>
+
+    <style name="TextEstimateTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0.58sp</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+    </style>
+
+    <style name="TextBirthDate">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">0.5sp</item>
+    </style>
+
+    <style name="TextMinusPlus">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0.35sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextMenuCalendar">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">0.32sp</item>
+    </style>
+
+    <style name="TextCardNumber">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0.4sp</item>
+    </style>
+
+    <style name="TextDialogTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">2.3sp</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+    </style>
+
+    <style name="TextDialogDesc">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">4.8sp</item>
+    </style>
+
+    <style name="TextFavDishesDesc">
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">0.25sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextPlaceHolderMenu">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">0.37sp</item>
+        <item name="android:textColor">@color/color_text_placeholder</item>
+    </style>
+
+    <style name="TextEmptyBasket">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">0.5sp</item>
+        <item name="android:textColor">@color/color_text_placeholder</item>
+    </style>
+
+    <style name="TextUpdateAppTitle">
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:lineSpacingExtra">1.15sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextEmailInfo">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10.5sp</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+    </style>
+
+    <style name="TextCardStatusTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">0.5sp</item>
+    </style>
+
+    <style name="TextCardStatusDescBig">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">0.3sp</item>
+    </style>
+
+    <style name="TextCardStatusDesc">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:lineSpacingExtra">0.25sp</item>
+    </style>
+
+    <style name="TextGroupsTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/object_sans_heavy</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">0.72sp</item>
+    </style>
+
+    <style name="TextGroupsDesc">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">0.37sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12dp"
+            android:foreground="@drawable/ripple_item_background"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView_product"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:src="@drawable/example_dish" />
+
+                <TextView
+                    android:id="@+id/textView_title"
+                    style="@style/DishItem.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView_product"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Сандвич на ржаном хлебе с тунцом и грибами" />
+
+                <TextView
+                    android:id="@+id/textView_calories_weight"
+                    style="@style/DishItem.Weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toEndOf="@id/imageView_product"
+                    app:layout_constraintTop_toBottomOf="@id/textView_title"
+                    tools:text="999 ккал на 100г / 145 г" />
+
+                <TextView
+                    android:id="@+id/textView_price"
+                    style="@style/DishItem.Cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toEndOf="@id/imageView_product"
+                    app:layout_constraintTop_toBottomOf="@id/textView_calories_weight"
+                    tools:text="999 ₽" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="14dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <ImageView
+                        android:id="@+id/minus"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/minus_plus_bg"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:foreground="@drawable/ripple_oval_background"/>
+
+                    <TextView
+                        android:id="@+id/text_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_minus"
+                        style="@style/TextMinusPlus"
+                        app:layout_constraintBottom_toBottomOf="@id/minus"
+                        app:layout_constraintStart_toStartOf="@id/minus"
+                        app:layout_constraintTop_toTopOf="@id/minus"
+                        app:layout_constraintEnd_toEndOf="@id/minus"/>
+
+                    <TextView
+                        android:id="@+id/textView_count"
+                        style="@style/DishItem.Count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/minus"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:minWidth="10dp"
+                        android:gravity="center"
+                        tools:text="0" />
+
+                    <ImageView
+                        android:id="@+id/plus"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/minus_plus_bg"
+                        android:layout_marginStart="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/textView_count"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:foreground="@drawable/ripple_oval_background"/>
+
+                    <TextView
+                        android:id="@+id/text_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_plus"
+                        style="@style/TextMinusPlus"
+                        app:layout_constraintBottom_toBottomOf="@id/plus"
+                        app:layout_constraintStart_toStartOf="@id/plus"
+                        app:layout_constraintTop_toTopOf="@id/plus"
+                        app:layout_constraintEnd_toEndOf="@id/plus"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/line_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

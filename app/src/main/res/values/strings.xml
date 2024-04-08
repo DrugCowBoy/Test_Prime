@@ -1,0 +1,288 @@
+<resources>
+    <string name="app_name">Test Prime</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Dialog -->
+    <string name="dialog_ok">OK</string>
+    <string name="connection_error">Ошибка соединения</string>
+    <string name="btn_update">Обновить</string>
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_yes">Да</string>
+    <string name="btn_load_again">Загрузить заново</string>
+    <string name="connection_error_title">Что-то со связью</string>
+    <string name="connection_error_desc">Похоже, интернета совсем нет\nили сигнал очень слабый</string>
+
+    <!-- Onboarding -->
+    <string name="fifth_screen_button">Далее</string>
+
+    <!-- Phone -->
+    <string name="input_phone_number"><font size="14">Введите номер телефона</font></string>
+    <string name="phone_pattern">+7 (###) ###-##-##</string>
+    <string name="btn_continue">Продолжить</string>
+
+    <!-- Code -->
+    <string name="code_desc">Введите последние четыре цифры входящего звонка</string>
+    <string name="input_code"><font style="normal">_ _ _ _</font></string>
+    <string name="change_phone_number"><u>Изменить номер телефона</u></string>
+    <string name="retry_code_sec"><u>Повторно отправить код (%1$s сек)</u></string>
+    <string name="retry_code"><u>Повторно отправить код</u></string>
+    <string name="error_code">Код введён неверно</string>
+
+    <!-- Name -->
+    <string name="club_desc">Похоже, вы ещё не являетесь участником клуба My Prime</string>
+    <string name="input_name"><font size="14">Введите ваше имя</font></string>
+    <string name="error_name">Имя может содержать только кириллические буквы</string>
+    <string name="gender">Пол</string>
+    <string name="gender_male">Мужчина</string>
+    <string name="gender_female">Женщина</string>
+
+    <!-- Date birth -->
+    <string name="date_birth_desc">Пожалуйста, введите вашу дату рождения</string>
+    <string name="input_date_birth"><font size="14">ДД/ММ/ГГГГ</font></string>
+    <string name="info_date_birth">Скидка до -20% в день рождения</string>
+    <string name="date_birth_less_18">Ваш возраст должен быть не менее 18 лет</string>
+
+    <!-- Email -->
+    <string name="input_email"><font size="14">Введите ваш Email (необязательно)</font></string>
+    <string name="btn_to_my_prime">Зарегистрироваться</string>
+    <string name="error_email">Email введен неверно</string>
+    <string name="email_already_exist">Пользователь с такой почтой существует</string>
+    <string name="info_email">Отправим персональные скидки и предложения</string>
+    <string name="info_email_loyalty">Согласен с правилами Программы лояльности PRIME и политикой обработки персональных данных</string>
+
+    <!-- Bottom Menu -->
+    <string name="bottom_menu_loyalty">My Prime</string>
+    <string name="bottom_menu_menu">Меню</string>
+    <string name="bottom_menu_card">Карта</string>
+    <string name="bottom_menu_basket">Корзина</string>
+    <string name="bottom_menu_profile">Профиль</string>
+
+    <!-- Product -->
+    <string name="product_price">%1$s ₽</string>
+    <string name="product_calories">%1$s ккал на 100г</string>
+    <string name="product_weight">%1$s г</string>
+    <string name="item_minus">-</string>
+    <string name="item_plus">+</string>
+
+    <!-- Product Item Dialog -->
+    <string name="product_item_add">Добавить за %1$s ₽</string>
+    <string name="product_item_weight">%1$s г</string>
+    <string name="on_100_gram">На 100 граммов:</string>
+    <string name="protein">белок</string>
+    <string name="fats">жиры</string>
+    <string name="carbs">углеводы</string>
+    <string name="calories">ккал</string>
+    <string name="in_dish">В блюде:</string>
+    <string name="compound"><b>Состав:</b> %1$s</string>
+
+    <!-- Menu -->
+    <string name="search_product"><font size="12">Найти блюдо</font></string>
+    <string name="empty_search">Ничего не найдено</string>
+    <string name="all_categories">Все категории</string>
+    <string name="menu_calendar_date">Меню от:</string>
+    <string name="menu_calendar_open">Открыть календарь</string>
+    <string name="menu_calendar_desc">Наше меню меняется в зависимости от дня доставки. Это значит, что каждый день мы готовим свежую еду из самых свежих продуктов.</string>
+    <string name="menu_placeholder_text">Меню доставки\nнаходится в разработке\n\nВ ближайшее время мы\nсообщим  о его готовности</string>
+
+    <!-- Basket -->
+    <string name="my_order">Мой заказ</string>
+    <string name="empty_basket">Ваша корзина пуста\n\n<b>Наполните её свежими и натуральными блюдами нашего меню</b></string>
+    <string name="clear_basket">Удалить всё из\nкорзины?</string>
+    <string name="not_cancel">Это действие нельзя будет отменить.</string>
+    <string name="btn_cancel">Оставить</string>
+    <string name="btn_delete">Удалить</string>
+    <string name="basket_placeholder_text">Ваша корзина пуста\n\nМеню доставки\nнаходится в разработке</string>
+
+    <!-- Basket Item -->
+    <string name="basket_item_calories_weight">%1$s ккал на 100г / %2$s г</string>
+
+    <!-- Favorites -->
+    <string name="favorites_products">Избранные блюда</string>
+    <string name="empty_favorites">Здесь пока ничего нет, добавьте товары в избранное, и они появятся тут</string>
+
+    <!-- Estimate Product Dialog -->
+    <string name="btn_estimate">Оценить</string>
+    <string name="estimate_desc">Оцените наши блюда\nи получите баллы</string>
+    <string name="feedback_hint">Оставьте ваш отзыв</string>
+    <string name="estimate_bonus">+2</string>
+    <string name="estimate_indicator">%1$s/%2$s</string>
+
+    <!-- Profile -->
+    <string name="tab_my_data">Мои данные</string>
+    <string name="empty_email">Добавить почту</string>
+    <string name="tab_favorites">Избранное</string>
+    <string name="tab_orders">История покупок</string>
+    <string name="tab_support">Поддержка</string>
+    <string name="tab_our_cafes">Наши кафе</string>
+
+    <!-- My Data Tab -->
+    <string name="addresses_delivery">Адреса доставки</string>
+    <string name="add_address">Добавить адрес</string>
+    <string name="newsletters">Уведомления</string>
+    <string name="push">Push</string>
+    <string name="sms">SMS</string>
+    <string name="email">Email</string>
+    <string name="email_not_verified">Почта не подтверждена</string>
+    <string name="account_exit">Выйти из аккаунта</string>
+    <string name="account_delete">Удалить аккаунт</string>
+    <string name="dialog_account_exit_title">Вы уверены, что хотите выйти из аккаунта?</string>
+    <string name="dialog_account_delete_title">Вы уверены, что хотите удалить свой аккаунт?</string>
+    <string name="dialog_account_delete_desc">В случае удаления будет невозможно восстановить ваши данные</string>
+    <string name="btn_exit">Выйти</string>
+    <string name="btn_back">Назад</string>
+
+    <!-- Change Data Dialog -->
+    <string name="btn_save">Сохранить</string>
+    <string name="change_name">Ваше имя</string>
+    <string name="change_birth">Дата рождения</string>
+    <string name="change_phone">Номер телефона</string>
+    <string name="change_email">Электронная почта</string>
+
+    <!-- Loyalty -->
+    <string name="coins_desc">Баллы PRIME</string>
+    <string name="rate_desc">Оценить блюда</string>
+    <string name="personal_desc">Персональные\nскидки</string>
+    <string name="current_status">У вас %1$s статус PRIME</string>
+    <string name="status_left">До %1$sого статуса осталось %2$d ₽</string>
+    <string name="status_info">Заходите к нам чаще, покупайте больше, получайте новый статус и баллы</string>
+    <string name="birth_day_sale">Скидка на День рождения</string>
+    <string name="btn_birth_activate">Активировать скидку</string>
+    <string name="fav_btn_select_new">Выбрать новые</string>
+    <string name="fav_btn_select">Выбрать</string>
+    <string name="fav_btn_look">Посмотреть</string>
+    <string name="favorite_dishes_desc_status_1">Каждый месяц выбирайте любимые блюда и получайте баллы за них</string>
+    <string name="favorite_dishes_desc_status_2">Вы выбрали любимые блюда месяца. Также можете выбирать любимые блюда на следующий месяц</string>
+    <string name="favorite_dishes_desc_status_3">Вы выбрали любимые блюда</string>
+    <string name="popular_products">Популярные блюда</string>
+    <string name="hi_user">Привет, %1$s!</string>
+
+    <!-- Birth Date Discount -->
+    <string name="bd_more_coins">Больше баллов в День рождения</string>
+    <string name="bd_promotion_info">Предоставляемая нам персональная информация может быть передана нашим партнерам (ранее и далее — «Партнеры»), в целях исполнениям нами своих обязательств в связи с использованием вами наших Сервисов. В таких случаях передача персональной информации возможна только в случаях, установленных действующим законодательством РФ.</string>
+    <string name="bd_promotion_details"><u>Подробные условия акции</u></string>
+    <string name="btn_activate">Активировать</string>
+
+    <!-- Birth Date Soon -->
+    <string name="bd_birthday_soon">С наступающим Днём рождения!</string>
+    <string name="bd_birthday_active">С Днём рождения!</string>
+    <string name="bd_card_dishes_title">Ваши любимые блюда</string>
+    <string name="bd_card_dishes_desc">Закажите блюдо в кафе или оформите заказ в приложении</string>
+    <string name="btn_to_favorites">Перейти в избранное</string>
+    <string name="btn_great">Отлично</string>
+    <string name="btn_great_exclamation">Отлично!</string>
+
+    <!-- Calendar -->
+    <string name="btn_select">Выбрать</string>
+    <string name="january">Январь</string>
+    <string name="february">Февраль</string>
+    <string name="march">Март</string>
+    <string name="april">Апрель</string>
+    <string name="may">Май</string>
+    <string name="june">Июнь</string>
+    <string name="july">Июль</string>
+    <string name="august">Август</string>
+    <string name="september">Сентябрь</string>
+    <string name="october">Октябрь</string>
+    <string name="november">Ноябрь</string>
+    <string name="december">Декабрь</string>
+    <string name="mon">Пн</string>
+    <string name="tue">Вт</string>
+    <string name="wed">Ср</string>
+    <string name="thu">Чт</string>
+    <string name="fri">Пт</string>
+    <string name="sat">Сб</string>
+    <string name="sun">Вс</string>
+
+    <!-- Card -->
+    <string name="your_card">Ваша карта My Prime</string>
+    <string name="card_personal_discount">Персональные скидки</string>
+    <string name="card_personal_discount_time">Действуют только для Вас\nдо %1$s</string>
+    <string name="minus_discount">-%1$s%%</string>
+    <string name="activate_discount">Активировать скидку</string>
+    <string name="activated_discount">Скидка применена</string>
+    <string name="activate_discount_info">*скидку можно применить только 1 раз.\nпри наличии двух и более скидок - применяется максимальная</string>
+
+    <!-- Preferred Groups -->
+    <string name="favorite_dishes_title">Баллы за блюда в %1$s</string>
+    <string name="favorite_selected_dishes_title">Баллы за блюда и категории в %1$s</string>
+    <string name="favorite_dishes_desc">Каждый месяц выбирайте любимые блюда и получайте баллы за них</string>
+    <string name="btn_select_categories">Выбрать категории</string>
+    <string name="select_3_categories_desc">Выберите три категории в %1$s</string>
+    <string name="select_2_categories_desc">Выберите ещё две категории</string>
+    <string name="select_1_categories_desc">Выберите ещё одну категорию</string>
+    <string name="more_about_category"><u>Подробнее о категории</u></string>
+    <string name="next_month_title">Выберите любимые блюда и категории на следующий месяц</string>
+    <string name="next_month_desc">Повышенный кэшбек на них будет доступен с первого дня следующего месяца</string>
+    <string name="btn_select_category">Выбрать категорию</string>
+    <string name="btn_not_select_category">Категория выбрана</string>
+    <string name="group_dishes">Блюда категории</string>
+    <string name="discount_percent">%1$s%%</string>
+    <string name="group_dish_price">%1$s ₽</string>
+    <string name="select_3_groups">Выберите 3 категории</string>
+    <string name="select_2_groups">Выберите ещё 2 категории</string>
+    <string name="select_1_groups">Выберите ещё 1 категорию</string>
+    <string name="you_selected_groups">Любимые категории выбраны</string>
+
+    <!-- Preferred Groups Months -->
+    <string name="group_january">январе</string>
+    <string name="group_february">феврале</string>
+    <string name="group_march">марте</string>
+    <string name="group_april">апреле</string>
+    <string name="group_may">мае</string>
+    <string name="group_june">июне</string>
+    <string name="group_july">июле</string>
+    <string name="group_august">августе</string>
+    <string name="group_september">сентябре</string>
+    <string name="group_october">октябре</string>
+    <string name="group_november">ноябре</string>
+    <string name="group_december">декабре</string>
+
+    <!-- Our Cafes -->
+    <string name="our_cafes">Наши кафе</string>
+
+    <!-- My Orders -->
+    <string name="my_orders">Мои заказы</string>
+    <string name="order_number">Заказ в кафе № %1$s</string>
+    <string name="order_amount">%1$s ₽</string>
+    <string name="detailed_order_info">%1$s ккал на 100г\n%2$s г</string>
+    <string name="detailed_order_toolbar"> Заказ в кафе от %1$s</string>
+
+    <!-- Detailed Order -->
+    <string name="detailed_order_details">Детали</string>
+    <string name="detailed_order_address">Адрес кафе :</string>
+    <string name="detailed_order_estimate">Заработайте баллы за оценку блюд в заказе</string>
+
+    <!-- Update App -->
+    <string name="update_app_title">Обновите приложение</string>
+    <string name="update_app_desc">Мы сделали его лучше, удобнее\nи быстрее [image]</string>
+    <string name="update_app_btn">Обновить</string>
+
+    <!-- Change Phone -->
+    <string name="text_change_phone_title">Укажите новый телефон</string>
+    <string name="text_change_phone_desc">Мы отправим код подтверждения</string>
+    <string name="btn_change_phone">Получить код</string>
+    <string name="text_change_phone_code_title">Введите код</string>
+    <string name="text_change_phone_code_desc">Мы отправили его на номер \n%1$s</string>
+    <string name="text_dialog_change_phone">Ваш телефон успешно изменен</string>
+    <string name="phone_already_exist">Пользователь с таким номером существует</string>
+
+    <!-- Change Mail -->
+    <string name="text_change_mail_confirm_title">Подтвердите почту</string>
+    <string name="text_change_mail_enter_title">Введите почту</string>
+    <string name="text_change_mail_new_title">Введите новую почту</string>
+    <string name="text_change_mail_desc">Мы отправим письмо для подтверждения почты</string>
+    <string name="input_email_change"><font size="14">Введите ваш Email</font>l</string>
+    <string name="text_dialog_change_mail">На адрес %1$s отправлено письмо для подтверждения почты</string>
+
+    <!-- Estimate Visit Dialog -->
+    <string name="visit_estimate_title">Расскажите нам о вашем последнем визите</string>
+    <string name="visit_estimate_general">Общее впечатление</string>
+    <string name="visit_estimate_service">Дружелюбный сервис</string>
+    <string name="visit_estimate_availability">Выбор блюд</string>
+    <string name="visit_estimate_atmosphere">Атмосфера в кафе</string>
+    <string name="comment">Комментарий</string>
+
+    <!-- Estimate Visit Dialog -->
+    <string name="your_status">Ваш статус PRIME</string>
+
+</resources>

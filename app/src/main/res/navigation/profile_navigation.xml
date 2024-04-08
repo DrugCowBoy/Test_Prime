@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_navigation"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.dot.prime.presentation.profile.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_my_data" >
+        <action
+            android:id="@+id/action_profileFragment_to_productFragment3"
+            app:destination="@id/productFragment3" />
+        <action
+            android:id="@+id/action_profileFragment_to_accountDeleteFragment"
+            app:destination="@id/accountDeleteFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_accountExitFragment"
+            app:destination="@id/accountExitFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_changeNameFragment"
+            app:destination="@id/changeNameFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_detailedOrderFragment"
+            app:destination="@id/detailedOrderFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_estimateVisitFragment"
+            app:destination="@id/estimateVisitFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/productFragment3"
+        android:name="com.dot.prime.presentation.product.view.ProductFragment"
+        android:label="ProductFragment"
+        tools:layout="@layout/dialog_fragment_product">
+        <argument android:name="id_product"
+            app:argType="string" />
+        <argument
+            android:name="quantity"
+            app:argType="integer" />
+    </dialog>
+    <dialog
+        android:id="@+id/accountDeleteFragment"
+        android:name="com.dot.prime.presentation.profile.viewpager.my_data.my_data.dialog.AccountDeleteFragment"
+        android:label="AccountDeleteFragment"
+        tools:layout="@layout/dialog_fragment_account_delete"/>
+    <dialog
+        android:id="@+id/accountExitFragment"
+        android:name="com.dot.prime.presentation.profile.viewpager.my_data.my_data.dialog.AccountExitFragment"
+        android:label="AccountExitFragment"
+        tools:layout="@layout/dialog_fragment_account_exit"/>
+    <dialog
+        android:id="@+id/changeNameFragment"
+        android:name="com.dot.prime.presentation.profile.viewpager.my_data.change_name.view.ChangeNameFragment"
+        android:label="ChangeNameFragment"
+        tools:layout="@layout/dialog_fragment_change_name"/>
+    <fragment
+        android:id="@+id/detailedOrderFragment"
+        android:name="com.dot.prime.presentation.detailed_order.view.DetailedOrderFragment"
+        android:label="DetailedOrderFragment"
+        tools:layout="@layout/fragment_detailed_order">
+
+        <argument android:name="order_id"
+            app:argType="string" />
+        <argument android:name="address"
+            app:argType="string" />
+        <argument android:name="amount"
+            app:argType="string" />
+        <argument android:name="discount"
+            app:argType="string" />
+        <argument android:name="final_amount"
+            app:argType="string" />
+        <argument android:name="date"
+            app:argType="string" />
+        <argument android:name="number"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailedOrderFragment_to_estimateProductFragment2"
+            app:destination="@id/estimateProductFragment2" />
+    </fragment>
+    <dialog
+        android:id="@+id/estimateVisitFragment"
+        android:name="com.dot.prime.presentation.estimate_visit.view.EstimateVisitFragment"
+        android:label="EstimateVisitFragment"
+        tools:layout="@layout/dialog_fragment_estimate_visit">
+        <argument
+            android:name="order_id"
+            app:argType="string" />
+        <argument
+            android:name="stars"
+            app:argType="integer" />
+    </dialog>
+    <dialog
+        android:id="@+id/estimateProductFragment2"
+        android:name="com.example.testprime.presentation.loyalty.estimate_product.view.EstimateProductFragment"
+        android:label="EstimateProductFragment"
+        tools:layout="@layout/dialog_fragment_estimate_product">
+        <argument
+            android:name="order_id"
+            app:argType="string" />
+    </dialog>
+</navigation>
